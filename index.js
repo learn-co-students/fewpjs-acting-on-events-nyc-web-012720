@@ -1,17 +1,15 @@
 console.log("it's not so bad");
 let dodger = document.getElementById("dodger");
 
-document.addEventListener("DOMContentLoaded", function() {
-
-    document.addEventListener("keydown", function(event){
-        if (event.key === "ArrowLeft"){
-            moveDodgerLeft()
-        };
-        if (event.key === "ArrowRight"){
-            moveDodgerRight()
-        }
-    });
+document.addEventListener("keydown", function(event){
+    if (event.key === "ArrowLeft"){
+        moveDodgerLeft()
+    };
+    if (event.key === "ArrowRight"){
+        moveDodgerRight()
+    }
 });
+
 
 function moveDodgerLeft() {
     let leftNumbers = dodger.style.left.replace("px", "");
